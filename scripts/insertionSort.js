@@ -9,8 +9,7 @@ const insertionSort = (unsortedArray) => {
         tempEl = sortedArray[j];
         sortedArray[j] = sortedArray[j - 1];
         sortedArray[j - 1] = tempEl
-      }
-      else {
+      } else {
         j = 0;
       }
     }
