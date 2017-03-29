@@ -44,12 +44,8 @@ describe('Merge sort tests', () => {
   it('sort a big array of random numbers', () => {
     const min = 0;
     const max = 20;
-    const n = 5;
+    const n = 100;
     const randArray = randNumGen(min, max, n);
-
-    // const compareNumbers = (a, b) => {
-    //   return a - b;
-    // }
 
     assert.deepEqual(mergeSort(randArray), randArray.sort(compareNumbers));
   });
