@@ -45,11 +45,10 @@ describe('Bubble sort tests', () => {
   it('sort a big array of random numbers', () => {
     const min = 0;
     const max = 1e6;
-    const n = 2;
+    const n = 100;
     const randArray = randNumGen(min, max, n);
 
     assert.deepEqual(bubbleSort(randArray), randArray.sort(compareNumbers));
   });
-
 
 })
