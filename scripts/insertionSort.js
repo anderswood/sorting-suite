@@ -1,19 +1,19 @@
 
-const insertionSort = (unsortedArray) => {
+const insertionSort = (unsortedArr) => {
   let tempEl;
 
-  for (var i = 1; i < unsortedArray.length; i++) {
+  for (var i = 1; i < unsortedArr.length; i++) {
     for (let j = i; j > 0; j--) {
-      if (unsortedArray[j] < unsortedArray[j - 1]) {
-        tempEl = unsortedArray[j];
-        unsortedArray[j] = unsortedArray[j - 1];
-        unsortedArray[j - 1] = tempEl
+      if (unsortedArr[j] < unsortedArr[j - 1]) {
+        tempEl = unsortedArr[j];
+        unsortedArr[j] = unsortedArr[j - 1];
+        unsortedArr[j - 1] = tempEl
       } else {
         break;
       }
     }
   }
-  return unsortedArray
+  return unsortedArr
 }
 
 export default insertionSort;
